@@ -1,0 +1,27 @@
+:root {
+  --container-width: 1320px;
+  --container-padding: 20px;
+
+  --font-main: "Inter", sans-serif;
+  --font-titles: var(--font-main);
+
+  --primary-color: #ef6817;
+  --primary-color-2: #cf540a;
+  --white-color: #fff;
+  --lite-color: #eaeaea;
+  --text-color: #21201f;
+  --grey-color: #959595;
+  --grey-color-2: #626161;
+  --accent: #ac182c;
+  --link-color: #2578c8;
+
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+.dark {
+  --white-color: #252526;
+  --text-color: #fff;
+}

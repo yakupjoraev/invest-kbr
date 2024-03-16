@@ -1,0 +1,248 @@
+.invest-agency {
+
+  // .invest-agency__inner
+
+  &__inner {}
+
+  // .invest-agency__info
+
+  &__info {
+    margin-bottom: 24px;
+    padding: 32px 48px;
+    background-color: var(--grey-color-2);
+    font-size: 20px;
+    color: var(--white-color);
+
+    @include mobile {
+      padding: 16px 24px;
+      font-size: 18px;
+    }
+  }
+
+  // .invest-agency__tasts
+
+  &__tasts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 48px;
+    margin-bottom: 96px;
+    border-radius: 0 40px;
+    background-color: var(--lite-color);
+
+    @include tablet {
+      margin-bottom: 48px;
+    }
+
+    @include mobile {
+      padding: 24px 16px;
+      margin-bottom: 24px;
+      row-gap: 16px;
+    }
+  }
+
+  // .invest-agency__tasts-label
+
+  &__tasts-label {
+    font-size: 20px;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .invest-agency__tasts-list
+
+  &__tasts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    @include mobile {
+      row-gap: 16px;
+    }
+  }
+
+  // .invest-agency__tasts-item
+
+  &__tasts-item {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    font-size: 16px;
+
+    @include mobile {
+      column-gap: 16px;
+      font-size: 14px;
+    }
+  }
+
+  // .invest-agency__contacts
+
+  &__contacts {}
+
+  // .invest-agency__contacts-title
+
+  &__contacts-title {}
+
+  // .invest-agency__columns
+
+  &__columns {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 32px;
+    row-gap: 32px;
+
+    @include tablet {
+      grid-auto-flow: row;
+    }
+
+    @include mobile {
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+
+  // .invest-agency__connections
+
+  &__connections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .invest-agency__connection
+
+  &__connection {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    padding: 24px 32px;
+    background-color: var(--primary-color-2);
+
+    &:nth-child(1) {
+      border-radius: 0 0 16px 0;
+
+      @include small-mobile {
+        border-radius: 0 0 16px 16px;
+      }
+    }
+
+    &:nth-child(2) {
+      border-radius: 0 0 0 16px;
+
+      @include small-mobile {
+        border-radius: 0 0 16px 16px;
+      }
+    }
+
+    &:nth-child(3) {
+      border-radius: 0 16px 0 0;
+
+      @include small-mobile {
+        border-radius: 0 0 16px 16px;
+      }
+    }
+
+    &:nth-child(4) {
+      border-radius: 16px 0 0 0;
+
+      @include small-mobile {
+        border-radius: 0 0 16px 16px;
+      }
+    }
+  }
+
+  // .invest-agency__connection-icon
+
+  &__connection-icon {}
+
+  // .invest-agency__connection-links
+
+  &__connection-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  // .invest-agency__connection-link
+
+  &__connection-link {
+    white-space: nowrap;
+    font-size: 16px;
+    color: var(--white-color);
+
+    @media (hover:hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // .invest-agency__pictures
+
+  &__pictures {
+    max-width: 600px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+
+  // .invest-agency__picture
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.icon--arrow-right--orange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.32rem;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  fill: var(--lite-color);
+}
+
+.icon--location {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  fill: var(--white-color);
+  stroke: var(--white-color);
+}
+
+.icon--phone {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  fill: var(--white-color);
+}
+
+.icon--email {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  fill: var(--white-color);
+}
+
+.icon--non-website {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  fill: var(--white-color);
+}

@@ -1,0 +1,23 @@
+.page-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--text-color);
+
+
+  @include small-mobile {
+    font-size: 24px;
+  }
+}
+
+.title-h3 {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+
+
+  @include small-mobile {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
