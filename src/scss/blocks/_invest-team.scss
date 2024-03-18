@@ -1,0 +1,92 @@
+.invest-team {
+
+  // .invest-team__inner
+
+  &__inner {}
+
+  // .invest-team__columns
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 48px;
+
+    @include tablet {}
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 24px;
+    }
+  }
+
+  // .invest-team__column
+
+  &__column {
+    padding: 32px 24px;
+    background-color: var(--lite-color);
+
+    @include tablet {
+      padding: 24px 16px;
+    }
+
+    @include small-mobile {
+      padding: 16px 12px;
+    }
+  }
+
+  // .invest-team__column-pic
+
+  &__column-pic {
+    height: 390px;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+
+    @include tablet {
+      height: 360px;
+    }
+
+    @include small-mobile {
+      height: 320px;
+      margin-bottom: 12px;
+    }
+  }
+
+  // .invest-team__column-info
+
+  &__column-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
+    @include small-mobile {
+      row-gap: 12px;
+    }
+  }
+
+  // .invest-team__column-name
+
+  &__column-name {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+
+    @include small-mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .invest-team__column-position
+
+  &__column-position {
+    font-size: 16px;
+    text-align: center;
+  }
+}

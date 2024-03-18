@@ -124,7 +124,7 @@
     align-items: center;
     column-gap: 24px;
     padding: 24px 32px;
-    background-color: var(--primary-color-2);
+    background: var(--gradient-bg);
 
     &:nth-child(1) {
       border-radius: 0 0 16px 0;

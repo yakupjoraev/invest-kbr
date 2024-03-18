@@ -1,0 +1,255 @@
+.tabs {
+  position: relative;
+}
+
+.tab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+
+  &:last-child .tab__item {
+    border-bottom: 1px solid var(--lite-color);
+  }
+
+  @include tablet {
+    column-gap: 24px;
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+  }
+
+  // .tab__item
+
+  &__item {
+    grid-column: span 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 24px 32px;
+    background-color: var(--white-color);
+    border-left: 1px solid var(--lite-color);
+    border-right: 1px solid var(--lite-color);
+    border-top: 1px solid var(--lite-color);
+    cursor: pointer;
+
+    &.active {
+      background-color: var(--lite-color);
+    }
+
+    @include mobile {
+      padding: 16px 24px;
+    }
+  }
+
+  // .tab__text
+
+  &__text {
+    font-size: 16px;
+    font-weight: 600;
+
+    @include small-mobile {
+      font-size: 14px;
+    }
+  }
+
+  // .tab__content
+
+  &__content {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: calc(50% - 48px);
+    height: 0;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+    overflow-y: auto;
+    scrollbar-color: var(--primary-color) var(--lite-color);
+    scrollbar-width: thin;
+    transition: top 0.2s ease-in, height 0.2s ease-in;
+
+    &.active {
+      top: 0;
+      height: 100%;
+      user-select: auto;
+      pointer-events: visible;
+      opacity: 1;
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--lite-color);
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: var(--primary-color);
+    }
+
+
+    @include tablet {
+      width: calc(50% - 24px);
+    }
+
+    @include mobile {
+      position: static;
+      display: none;
+      top: 0;
+      width: 100%;
+      opacity: 1;
+      animation: fade 0.3s linear;
+      transition: height 0.4s linear;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  // .tab__title
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  // .tab__numblocks
+
+  &__numblocks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-bottom: 32px;
+    list-style: none;
+    counter-reset: item;
+
+    @include mobile {
+      row-gap: 16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  // .tab__numblock
+
+  &__numblock {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 24px;
+    counter-increment: item;
+
+    &::before {
+      content: counter(item, decimal-leading-zero);
+      font-size: 48px;
+      color: var(--primary-color-2);
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      column-gap: 16px;
+
+      &::before {
+        font-size: 24px;
+      }
+    }
+
+    @include small-mobile {
+      font-size: 14px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__numblock-texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+
+  // .tab__download
+
+  &__download {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    padding: 32px 48px;
+    margin-bottom: 32px;
+    background: var(--gradient-bg);
+
+    p {
+      font-size: 20px;
+      color: var(--white-color);
+    }
+
+    @include mobile {
+      row-gap: 24px;
+      padding: 16px 24px;
+      margin-bottom: 24px;
+    }
+
+    @include small-mobile {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // .tab__download-link
+
+  &__download-link {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+    @include small-mobile {
+      font-size: 14px;
+    }
+
+    svg {
+      transition: transform 0.2s ease-in;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        svg {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+.icon--tab-arrow {
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+}
+
+
+.icon--download {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+}

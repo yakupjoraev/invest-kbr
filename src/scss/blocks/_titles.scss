@@ -9,6 +9,21 @@
   }
 }
 
+.title-h2 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--white-color);
+
+  @include mobile {
+    font-size: 24px;
+  }
+
+  @include small-mobile {
+    font-size: 20px;
+  }
+}
+
 .title-h3 {
   margin-bottom: 32px;
   font-weight: 700;
@@ -19,5 +34,14 @@
   @include small-mobile {
     margin-bottom: 20px;
     font-size: 18px;
+  }
+}
+
+.title-h4 {
+  font-weight: 600;
+  font-size: 16px;
+
+  @include small-mobile {
+    font-size: 14px;
   }
 }

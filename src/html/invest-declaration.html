@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Агентство инвестиционного развития</title>
+  <title>Инвестиционная декларация</title>
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -15,11 +15,18 @@
     <div class="main-wrapper">
       <div class="section-head">
         <div class="container">
-          @@include('blocks/breadcrumbs.html')
-          <h1 class="page-title">Агентство инвестиционного развития</h1>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Инвестору</a></li>
+              <li class="breadcrumbs__item">Региональный инвестиционный стандарт</li>
+            </ul>
+          </div>
+
+          <h1 class="page-title">Инвестиционная декларация</h1>
         </div>
       </div>
-      @@include('invest-agency/invest-agency.html')
+      @@include('invest-declaration/invest-declaration.html')
     </div>
   </main>
   @@include('blocks/footer.html')
