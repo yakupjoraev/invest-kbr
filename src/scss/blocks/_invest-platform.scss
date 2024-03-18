@@ -1,0 +1,118 @@
+.invest-platform {
+
+  // .invest-platform__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    padding: 48px;
+    background-color: var(--lite-color);
+
+    @include tablet {
+      row-gap: 48px;
+      column-gap: 24px;
+      padding: 32px;
+    }
+
+    @include mobile {
+      row-gap: 24px;
+      padding: 16px;
+    }
+  }
+
+  // .invest-platform__columns
+
+  &__columns {
+    display: grid;
+    grid-template-columns: 540px 1fr;
+    column-gap: 32px;
+    row-gap: 32px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+      column-gap: 24px;
+    }
+
+    @include mobile {
+      row-gap: 16px;
+      column-gap: 16px;
+    }
+  }
+
+  // .invest-platform__column
+
+  &__column {}
+
+  // .invest-platform__title
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include mobile {
+      margin-bottom: 16px;
+    }
+  }
+
+  // .invest-platform__address
+
+  &__address {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 20px;
+
+    @include mobile {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+  }
+
+  // .invest-platform__pictures
+
+  &__pictures {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include mobile {
+      row-gap: 16px;
+    }
+  }
+
+  // .invest-platform__pic
+
+  &__pic {
+    height: 276px;
+    width: 100%;
+    object-fit: cover;
+
+    @include small-mobile {
+      height: 240px;
+    }
+  }
+
+  // .invest-platform__column-text
+
+  &__column-text {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  // .invest-platform__column-sum
+
+  &__column-sum {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--primary-color-2);
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}
