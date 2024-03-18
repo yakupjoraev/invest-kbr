@@ -1,0 +1,124 @@
+.invest-standart {
+
+  // .invest-standart__inner
+
+  &__inner {}
+
+  // .invest-standart__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 32px;
+
+    @include tablet {
+      row-gap: 16px;
+      column-gap: 16px;
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .invest-standart__item
+
+  &__item {
+    display: grid;
+  }
+
+  // .invest-standart__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 48px 32px;
+    background: var(--gradient-bg);
+    transition: box-shadow 0.2s ease-in;
+
+    @media (hover:hover) {
+      &:hover {
+        -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.4);
+        -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.4);
+        box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.4);
+
+        .icon--invest-standart-arrow {
+          transform: translateX(10px);
+        }
+      }
+    }
+
+    @include tablet {
+      padding: 24px 16px;
+    }
+
+    @include small-mobile {
+      padding: 16px;
+    }
+  }
+
+  // .invest-standart__link-info
+
+  &__link-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 72px;
+
+    @include tablet {
+      row-gap: 48px;
+    }
+
+    @include small-mobile {
+      row-gap: 24px;
+    }
+  }
+
+  // .invest-standart__label
+
+  &__label {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 22px;
+    }
+
+    @include small-mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .invest-standart__link-icon
+
+  &__link-icon {
+
+    .icon {
+      max-width: 100px;
+      height: auto;
+      fill: var(--white-color);
+
+      @include tablet {
+        max-width: 80px;
+      }
+
+      @include small-mobile {
+        max-width: 60px;
+        max-height: 100px;
+        height: fit-content;
+      }
+    }
+  }
+}
+
+.icon--invest-standart-arrow {
+  width: 32px;
+  height: 14px;
+  stroke: var(--white-color);
+  fill: var(--white-color);
+  transition: transform 0.2s ease-in;
+}
