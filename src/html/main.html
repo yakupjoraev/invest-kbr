@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Агентство инвестиционного развития</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -13,16 +14,17 @@
   @@include('blocks/header.html')
   <main>
     <div class="main-wrapper">
-      <div class="section-head">
-        <div class="container">
-          @@include('blocks/breadcrumbs.html')
-          <h1 class="page-title">Агентство инвестиционного развития</h1>
-        </div>
-      </div>
-      @@include('invest-agency/invest-agency.html')
+      @@include('main/hero.html')
+      @@include('main/news.html')
+      @@include('main/success-story.html')
+      @@include('main/raitings.html')
+      @@include('main/platform.html')
+      @@include('main/legislation.html')
+      @@include('main/tags.html')
     </div>
   </main>
   @@include('blocks/footer.html')
+  <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/index.bundle.js"></script>
 </body>
 

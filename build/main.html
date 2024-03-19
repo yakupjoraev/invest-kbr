@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Агентство инвестиционного развития</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -66,140 +67,614 @@
 </header>
   <main>
     <div class="main-wrapper">
-      <div class="section-head">
-        <div class="container">
-          <div class="breadcrumbs">
-  <ul class="breadcrumbs__list">
-    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
-    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Инвестору</a></li>
-    <li class="breadcrumbs__item">Региональный инвестиционный стандарт</li>
-  </ul>
-</div>
-          <h1 class="page-title">Агентство инвестиционного развития</h1>
-        </div>
-      </div>
-      <section class="invest-agency section">
-  <h2 class="visually-hidden">Информация про агентство инвестиционного развития</h2>
+
+      <section class="news">
   <div class="container">
-    <div class="invest-agency__inner">
-      <div class="info-block">
-        Агентство развития является операционным центром поддержки и&#160;сопровождения
-        инвестиционных проектов. Функции агентства развития в&#160;Республике Башкортостан выполняет АО&#160;&#171;Корпорация развития
-        Республики Башкортостан&#187;.
-      </div>
+    <div class="news__inner">
+      <h3 class="news__title page-title">Новости</h3>
 
-      <div class="invest-agency__tasts">
-        <h4 class="invest-agency__tasts-label">Основные задачи агентства развития:</h4>
+      <ul class="news__list">
+        <li class="news__item">
+          <div class="news__picture">
+            <img class="news__pic" src="./img/news/news-pic.jpg" srcset="./img/news/news-pic@2x.jpg" alt="Alt">
+          </div>
 
-        <ul class="invest-agency__tasts-list">
-          <li class="invest-agency__tasts-item">
-            <svg class="icon icon--arrow-right--orange">
-              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
-            </svg>
+          <div class="news__info">
+            <time class="news__time">22.02.2024</time>
+            <p class="news__text">По&#160;динамике роста сельхозпроизводства Кабардино-Балкария занимает первое место по&#160;СКФО
+            </p>
+          </div>
+        </li>
 
-            Формирование благоприятного инвестиционного климата на&#160;территории
-            Республики Башкортостан;
-          </li>
-          <li class="invest-agency__tasts-item">
-            <svg class="icon icon--arrow-right--orange">
-              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
-            </svg>
+        <li class="news__item">
+          <div class="news__picture">
+            <img class="news__pic" src="./img/news/news-pic.jpg" srcset="./img/news/news-pic@2x.jpg" alt="Alt">
+          </div>
 
-            Привлечение инвестиций в&#160;Республику Башкортостан;
-          </li>
-          <li class="invest-agency__tasts-item">
-            <svg class="icon icon--arrow-right--orange">
-              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
-            </svg>
+          <div class="news__info">
+            <time class="news__time">22.02.2024</time>
+            <p class="news__text">Парк общественного транспорта Кабардино-Балкарии пополнился новыми автобусами</p>
+          </div>
+        </li>
 
-            Сопровождение инвестиционных проектов на&#160;территории Республики
-            Башкортостан по&#160;принципу &#171;одного окна&#187;;
-          </li>
-          <li class="invest-agency__tasts-item">
-            <svg class="icon icon--arrow-right--orange">
-              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
-            </svg>
+        <li class="news__item">
+          <div class="news__picture">
+            <img class="news__pic" src="./img/news/news-pic.jpg" srcset="./img/news/news-pic@2x.jpg" alt="Alt">
+          </div>
 
-            Оказание содействия инвесторам в&#160;сфере технологического присоединения к
-            объектам инженерной инфраструктуры в&#160;части взаимодействия с&#160;ресурсоснабжающими организациями и&#160;операторами
-            инженерной и&#160;дорожной инфраструктур.
-          </li>
-        </ul>
-      </div>
+          <div class="news__info">
+            <time class="news__time">22.02.2024</time>
+            <p class="news__text">Андрей Белоусов: Госкомпании закупили у&#160;малого бизнеса товары и&#160;услуги на&#160;рекордные&#160;8
+              трлн рублей в&#160;2023 году</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="success-story">
+  <div class="container">
+    <div class="success-story__inner">
+      <h3 class="success-story__title page-title">Истории успеха</h3>
 
-      <div class="invest-agency__contacts">
-        <h3 class="invest-agency__contacts-title title-h3">
-          Агентство развития&#160;&#8212; АО&#160;&#171;Корпорация развития Республики Башкортостан&#187;
-          г.&#160;Уфа, ул.&#160;Тукаева, д.&#160;46/1&#160;&#8212; Центр управления Республикой Башкортостан
-        </h3>
+      <div class="success-story__slider swiper mySwiper">
+        <div class="success-story__slider-wrapper swiper-wrapper">
+          <div class="success-story__slide swiper-slide">
+            <div class="success-story__blocks">
+              <div class="success-story__block">
+                <p class="success-story__block-text">
+                  Строительство современных плодохранилищ на&#160;3400 тонн и&#160;закладка интенсивного яблоневого сада на
+                  площади 33 га
+                </p>
 
-        <div class="invest-agency__columns">
-          <div class="invest-agency__connections">
-            <div class="invest-agency__connection">
-              <div class="invest-agency__connection-icon">
-                <svg class="icon icon--location">
-                  <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
-                </svg>
+                <p class="success-story__block-firm">ООО&#160;&#171;Альфа плюс&#187;</p>
               </div>
 
-              <div class="invest-agency__connection-links">
-                <a class="invest-agency__connection-link" href="#" target="_blank">
-                  450101, Республика<br />
-                  Башкортостан, г.&#160;Уфа, ул.<br />
-                  Тукаева, д.&#160;46/1
-                </a>
-              </div>
-            </div>
+              <div class="success-story__block">
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">999</p>
+                  <p class="success-story__block-descr">млн руб.
+                    объем инвестиций</p>
+                </div>
 
-            <div class="invest-agency__connection">
-              <div class="invest-agency__connection-icon">
-                <svg class="icon icon--phone">
-                  <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
-                </svg>
-              </div>
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">млн руб.
+                    участие invest-kbr</p>
+                </div>
 
-              <div class="invest-agency__connection-links">
-                <a class="invest-agency__connection-link" href="tel:+73472149070">+7&#160;(34-72)&#160;14-90-70</a>
-                <a class="invest-agency__connection-link" href="tel:+73472181415">+7&#160;(34-72)&#160;18-14-15</a>
-              </div>
-            </div>
-
-            <div class="invest-agency__connection">
-              <div class="invest-agency__connection-icon">
-                <svg class="icon icon--email">
-                  <use href="./img/svgsprite/sprite.symbol.svg#email"></use>
-                </svg>
-              </div>
-
-              <div class="invest-agency__connection-links">
-                <a class="invest-agency__connection-link" href="mailto:infokrrb@bashkortostan.ru"
-                  target="_blank">infokrrb@bashkortostan.ru</a>
-              </div>
-            </div>
-
-            <div class="invest-agency__connection">
-              <div class="invest-agency__connection-icon">
-                <svg class="icon icon--non-website">
-                  <use href="./img/svgsprite/sprite.symbol.svg#non-website"></use>
-                </svg>
-              </div>
-
-              <div class="invest-agency__connection-links">
-                <a class="invest-agency__connection-link" href="http://www.kr-rb.ru"
-                  target="_blank">http://www.kr-rb.ru</a>
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">рабочих
+                    мест</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="invest-agency__pictures">
-            <img class="invest-agency__picture" src="./img/invest-agency/invest-agency-contacts-pic.jpg"
-              srcset="./img/invest-agency/invest-agency-contacts-pic@2x.jpg" alt="здание">
+          <div class="success-story__slide swiper-slide">
+            <div class="success-story__blocks">
+              <div class="success-story__block">
+                <p class="success-story__block-text">Создание туристического комплекса &#171;Верхние Голубые Озера&#187; в
+                  Черекском районе</p>
+
+                <p class="success-story__block-firm">ООО&#160;&#171;Верхние Голубые Озера&#187;</p>
+              </div>
+
+              <div class="success-story__block">
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">999</p>
+                  <p class="success-story__block-descr">млн руб.
+                    объем инвестиций</p>
+                </div>
+
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">млн руб.
+                    участие invest-kbr</p>
+                </div>
+
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">рабочих
+                    мест</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="success-story__slide swiper-slide">
+            <div class="success-story__blocks">
+              <div class="success-story__block">
+                <p class="success-story__block-text">
+                  Строительство современных плодохранилищ на&#160;3400 тонн и&#160;закладка интенсивного яблоневого сада на
+                  площади 33 га
+                </p>
+
+                <p class="success-story__block-firm">ООО&#160;&#171;Альфа плюс&#187;</p>
+              </div>
+
+              <div class="success-story__block">
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">999</p>
+                  <p class="success-story__block-descr">млн руб.
+                    объем инвестиций</p>
+                </div>
+
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">млн руб.
+                    участие invest-kbr</p>
+                </div>
+
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">рабочих
+                    мест</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="success-story__slide swiper-slide">
+            <div class="success-story__blocks">
+              <div class="success-story__block">
+                <p class="success-story__block-text">Создание туристического комплекса &#171;Верхние Голубые Озера&#187; в
+                  Черекском районе</p>
+
+                <p class="success-story__block-firm">ООО&#160;&#171;Верхние Голубые Озера&#187;</p>
+              </div>
+
+              <div class="success-story__block">
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">999</p>
+                  <p class="success-story__block-descr">млн руб.
+                    объем инвестиций</p>
+                </div>
+
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">млн руб.
+                    участие invest-kbr</p>
+                </div>
+
+                <div class="success-story__block-sum">
+                  <p class="success-story__block-num">99</p>
+                  <p class="success-story__block-descr">рабочих
+                    мест</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-story__slider-controls">
+          <div class="success-story__slider-btn success-story__slider-btn--prev">
+            <svg class="icon icon--slider-arrow-prev">
+              <use href="./img/svgsprite/sprite.symbol.svg#slider-arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="success-story__slider-pagination"></div>
+
+          <div class="success-story__slider-btn success-story__slider-btn--next">
+            <svg class="icon icon--slider-arrow-next">
+              <use href="./img/svgsprite/sprite.symbol.svg#slider-arrow-next"></use>
+            </svg>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+      <div class="raitings">
+  <div class="container">
+    <div class="raitings__inner">
+      <div class="raitings__column raitings__column--primary">
+        <h3 class="raitings__column-title title-h3">Инвестиционные предложения</h3>
+
+        <div class="raitings__links">
+          <a class="raitings__link" href="#">
+            <p class="raitings__link-text">Перечень объектов залогового фонда Кабардино-Балкарской Республики</p>
+
+            <svg class="icon icon--arrow-right">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right-nav"></use>
+            </svg>
+          </a>
+
+          <a class="raitings__link" href="#">
+            <p class="raitings__link-text">Бизнес-инкубаторы</p>
+
+            <svg class="icon icon--arrow-right">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right-nav"></use>
+            </svg>
+          </a>
+
+          <a class="raitings__link" href="#">
+            <p class="raitings__link-text">Реестр инвестиционных проектов</p>
+
+            <svg class="icon icon--arrow-right">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right-nav"></use>
+            </svg>
+          </a>
+
+          <a class="raitings__link" href="#">
+            <p class="raitings__link-text">Свободные инвестиционные площадки (Brownfield/Greenfield)</p>
+
+            <svg class="icon icon--arrow-right">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right-nav"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="raitings__column raitings__column--grey">
+        <h3 class="raitings__column-title title-h3">Рейтинги</h3>
+
+        <div class="raitings__rows">
+          <div class="raitings__row">
+            <h4 class="raitings__row-label">1 место</h4>
+            <p class="raitings__row-text">В&#160;ПЯТЕРКЕ РЕГИОНОВ РОССИИ ПО&#160;ВАЛОВОМУ СБОРУ ПЛОДОВ И&#160;ЯГОД В&#160;ТОВАРНОМ СЕКТОРЕ В
+              2020 ГОДУ</p>
+          </div>
+
+          <div class="raitings__row">
+            <h4 class="raitings__row-label">20&#160;тыс.га</h4>
+            <p class="raitings__row-text">СОВРЕМЕННЫХ САДОВ (ПОЛОВИНА ИЗ&#160;КОТОРЫХ ИНТЕНСИВНОГО И&#160;СУПЕРИНТЕНСИВНОГО ТИПОВ)
+              БЫЛО ЗАЛОЖЕНО В&#160;РЕСПУБЛИКЕ ЗА&#160;ПОСЛЕДНИЕ 5&#160;ЛЕТ. ЭТО СОСТАВЛЯЕТ ПОЧТИ ТРЕТЬ ВСЕХ ЗАЛОЖЕННЫХ СУПЕРИНТЕНСИВНЫХ
+              САДОВ В&#160;ЦЕЛОМ ПО&#160;РОССИИ ЗА&#160;УКАЗАННЫЙ ВЫШЕ ПЕРИОД.</p>
+          </div>
+
+          <div class="raitings__row">
+            <h4 class="raitings__row-label">Топ 10</h4>
+            <p class="raitings__row-text">КАБАРДИНО-БАЛКАРСКАЯ РЕСПУБЛИКА ЗАНЯЛА 6-Е МЕСТО В&#160;ТОП 10 КРУПНЕЙШИХ
+              РЕГИОНОВ-ПРОИЗВОДИТЕЛЕЙ КУКУРУЗЫ НА&#160;ЗЕРНО В&#160;2015 Г.</p>
+          </div>
+
+          <div class="raitings__row">
+            <h4 class="raitings__row-label">Топ 10</h4>
+            <p class="raitings__row-text">КАБАРДИНО-БАЛКАРСКАЯ РЕСПУБЛИКА ВХОДИТ В&#160;ТОП 10 ЛИДЕРОВ НАЦИОНАЛЬНОГО
+              ДЕМОГРАФИЧЕСКОГО РЕЙТИНГА.</p>
+          </div>
+
+          <div class="raitings__row">
+            <h4 class="raitings__row-label">Топ 5</h4>
+            <p class="raitings__row-text">КАБАРДИНО-БАЛКАРСКАЯ РЕСПУБЛИКА ВОШЛА В&#160;ТОП-5 ПО&#160;ДОГАЗИФИКАЦИИ В
+              ОБЩЕРОССИЙСКОМ РЕЙТИНГЕ.</p>
+          </div>
+
+          <div class="raitings__row">
+            <h4 class="raitings__row-label">Топ 5</h4>
+            <p class="raitings__row-text">СРЕДИ РЕГИОНОВ РОССИИ ПО&#160;ПРИВЕРЖЕННОСТИ НАСЕЛЕНИЯ К&#160;ЗДОРОВОМУ ОБРАЗУ ЖИЗНИ.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="raitings__column">
+        <div class="raitings__block">
+          <h4 class="raitings__block-title">Инфраструктура для бизнеса</h4>
+
+          <a class="raitings__block-link" href="#" target="_blank">Смотреть</a>
+        </div>
+
+        <div class="raitings__block">
+          <h4 class="raitings__block-title">Законодательство в&#160;сфере малого-среднего предпринимательства</h4>
+
+          <a class="raitings__block-link" href="#" target="_blank">Узнать больше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <section class="platform section">
+  <div class="container">
+    <div class="platform__inner">
+      <h3 class="platform__title page-title">Выбор инвестиционной площадки</h3>
+
+      <div class="platform__slider swiper mySwiper">
+        <div class="platform__slider-wrapper swiper-wrapper">
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="platform__slide swiper-slide">
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+
+            <div class="platform__block">
+              <div class="platform__block-info">
+                <p class="platform__block-text">
+                  Комплекс в&#160;составе 14 зданий общей площадью 20471,9 кв.&#160;м. Территория бывшего ОАО&#160;ГППЗ &#171;Котляревский&#187;
+                </p>
+                <time class="platform__block-time">
+                  29&#160;декабря 2023
+                </time>
+              </div>
+
+              <div class="platform__block-picture">
+                <img src="./img/platform/platform-pic.jpg" srcset="./img/platform/platform-pic@2x.jpg" alt="Alt">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="platform__slider-controls">
+          <div class="platform__slider-btn platform__slider-btn--prev">
+            <svg class="icon icon--slider-arrow-prev">
+              <use href="./img/svgsprite/sprite.symbol.svg#slider-arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="platform__slider-pagination"></div>
+
+          <div class="platform__slider-btn platform__slider-btn--next">
+            <svg class="icon icon--slider-arrow-next">
+              <use href="./img/svgsprite/sprite.symbol.svg#slider-arrow-next"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <div class="legislation">
+  <div class="container">
+    <div class="legislation__inner">
+      <div class="legislation__info">
+        <h3 class="legislation__title title-h3">Инвестиционное законодательство</h3>
+        <p class="legislation__text">Меры государственной поддержки инвестиционной деятельности на&#160;территории КБР</p>
+
+        <a class="legislation__link" href="#" target="_blank">Подробнее</a>
+      </div>
+
+      <div class="legislation__picture">
+        <img class="legislation__pic" src="./img/legislation/legislation-pic.png"
+          srcset="./img/legislation/legislation-pic@2x.png" alt="Alt">
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="tags">
+  <div class="container">
+    <div class="tags__list">
+      <div class="tags__item">ОЦЕНКА РЕГУЛИРУЮЩЕГО ВОЗДЕЙСТВИЯ</div>
+      <div class="tags__item">ПРИНЦИП ОДНОГО ОКНА</div>
+      <div class="tags__item">АО&#160;&#171;КОРПОРАЦИЯ РАЗВИТИЯ КБР&#187;</div>
+      <div class="tags__item">ПОДДЕРЖКА ИНВЕСТИЦИОННОЙ ДЕЯТЕЛЬНОСТИ</div>
+    </div>
+  </div>
+</div>
     </div>
   </main>
   <footer class="footer">
@@ -242,6 +717,7 @@
     </div>
   </div>
 </footer>
+  <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/index.bundle.js"></script>
 </body>
 

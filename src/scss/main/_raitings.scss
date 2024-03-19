@@ -1,0 +1,226 @@
+.raitings {
+  margin: 100px 0;
+
+  @include tablet {
+    margin: 80px 0;
+  }
+
+  @include mobile {
+    margin: 60px 0;
+  }
+
+  @include small-mobile {
+    margin: 40px 0;
+  }
+
+  // .raitings__inner
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .raitings__column
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  // .raitings__column--primary
+
+  &__column--primary {
+    padding: 48px;
+    background: var(--gradient-bg);
+    color: var(--white-color);
+
+    .raitings__column-title {
+      color: var(--white-color);
+    }
+
+    @include mobile {
+      padding: 24px;
+    }
+
+    @include small-mobile {
+      padding: 16px;
+    }
+  }
+
+  // .raitings__column-title
+
+  &__column-title {}
+
+  // .raitings__links
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .raitings__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--white-color);
+    font-size: 16px;
+    color: inherit;
+    transition: color 0.2s ease-in, border-color 0.2s linear;
+
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--lite-color);
+        color: var(--lite-color);
+
+        svg {
+          transform: translateX(5px);
+
+          fill: var(--lite-color);
+          stroke: var(--lite-color);
+        }
+      }
+    }
+
+    @include small-mobile {
+      padding: 16px 0;
+      font-size: 14px;
+    }
+  }
+
+  // .raitings__link-text
+
+  &__link-text {}
+
+  // .raitings__column--grey
+
+  &__column--grey {
+    padding: 48px;
+    background-color: var(--lite-color);
+
+    @include mobile {
+      padding: 24px;
+    }
+
+    @include small-mobile {
+      padding: 12px;
+    }
+  }
+
+  // .raitings__rows
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  // .raitings__row
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    @include small-mobile {
+      row-gap: 8px;
+    }
+  }
+
+  // .raitings__row-label
+
+  &__row-label {
+    font-size: 20px;
+    font-weight: 700;
+
+    @include small-mobile {
+      font-size: 16px;
+    }
+  }
+
+  // .raitings__row-text
+
+  &__row-text {
+    font-size: 10px;
+    line-height: 180%;
+    text-transform: uppercase;
+  }
+
+  // .raitings__block
+
+  &__block {
+    padding: 48px;
+    min-height: 366px;
+
+    &:nth-child(odd) {
+      background-color: var(--grey-color-2);
+
+      .raitings__block-title {
+        margin-bottom: 180px;
+
+        @include small-mobile {
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: var(--grey-color);
+
+      .raitings__block-title {
+        margin-bottom: 60px;
+
+        @include small-mobile {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      padding: 24px;
+      min-height: 240px;
+    }
+
+    @include small-mobile {
+      padding: 16px;
+      min-height: 200px;
+    }
+  }
+
+  // .raitings__block-title
+
+  &__block-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white-color);
+  }
+
+  // .raitings__block-link
+
+  &__block-link {
+    font-size: 15px;
+    color: var(--white-color);
+    transition: color 0.2s ease-in;
+
+    @media (hover:hover) {
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

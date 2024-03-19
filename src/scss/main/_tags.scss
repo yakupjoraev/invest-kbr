@@ -1,0 +1,39 @@
+.tags {
+
+  // .tags__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .tags__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    background-color: var(--lite-color);
+    border-radius: 0 40px 0 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    @include small-mobile {
+      padding: 24px;
+    }
+  }
+}
