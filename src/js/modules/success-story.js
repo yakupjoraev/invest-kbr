@@ -1,5 +1,5 @@
 function successStory() {
-  var swiper = new Swiper(".success-story__slider", {
+  const swiper = new Swiper(".success-story__slider", {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {

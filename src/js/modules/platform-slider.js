@@ -1,5 +1,5 @@
 function platformSlider() {
-  var swiper = new Swiper(".platform__slider", {
+  const swiper = new Swiper(".platform__slider", {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
