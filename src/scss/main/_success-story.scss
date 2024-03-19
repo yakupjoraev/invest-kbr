@@ -47,27 +47,31 @@
 
   &__slide {
     padding: 32px;
+    background-color: var(--white-color);
+    border: 3px solid var(--primary-color-2);
+    transition: all 0.2s ease-in;
 
-    &:nth-child(odd) {
-      background: var(--gradient-bg);
-      border: 3px solid transparent;
-
-      .success-story__block-descr,
-      .success-story__block-num {
-        color: var(--white-color);
-      }
+    .success-story__block-num {
+      color: var(--primary-color-2);
+      transition: all 0.2s ease-in;
     }
 
-    &:nth-child(even) {
-      background-color: var(--white-color);
-      border: 3px solid var(--primary-color-2);
+    .success-story__block-descr {
+      color: var(--text-color);
+      transition: all 0.2s ease-in;
+    }
 
-      .success-story__block-num {
-        color: var(--primary-color-2);
-      }
 
-      .success-story__block-descr {
-        color: var(--text-color);
+    @media (hover:hover) {
+      &:hover {
+        background: var(--gradient-bg);
+        border: 3px solid transparent;
+
+        .success-story__block-descr,
+        .success-story__block-num {
+          color: var(--white-color);
+        }
+
       }
     }
 
